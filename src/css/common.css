@@ -16,3 +16,32 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+display: flex;
+gap: 40px;
+
+margin-top: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  text-align: center;
+
+  background: rgb(174,224,238);
+  background: radial-gradient(circle, rgba(174,224,238,1) 0%, rgba(85,63,163,1) 100%);
+
+  width: 170px;
+
+  border-radius: 50%;
+}
+
+.value{
+  font-size: 40px;
+  font-weight: 700;
+
+  margin-top: 20px;
+}
