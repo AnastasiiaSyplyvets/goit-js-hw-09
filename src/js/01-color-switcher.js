@@ -10,6 +10,9 @@ const bodyEl = document.querySelector('body');
 
 let timerId = null;
 
+stopBtnEl.disabled = true;
+
+
 startBtnEl.addEventListener('click', (event)=> {
      timerId = setInterval(()=>{
         bodyEl.style.backgroundColor = getRandomHexColor();

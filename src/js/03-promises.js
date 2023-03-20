@@ -46,7 +46,7 @@ event.preventDefault();
 
 
 
-let delayValue = Number(delayStepEl.value);
+let delayValue = Number(delayEl.value);
 
 const amountValue = Number(amountEl.value);
 
@@ -60,12 +60,12 @@ for (let i = 1; i <= amountValue; i++) {
       // console.log(`❌ Rejected promise ${position} in ${delay}ms`);
       Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
     });
-    delayValue += Number(delayEl.value);
+    delayValue += Number(delayStepEl.value);
 }
 
 
 
 console.log('submitted');
-  
+  formEl.reset();
 })
 

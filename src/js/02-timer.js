@@ -53,7 +53,7 @@ const options = {
 
       startBtnEl.addEventListener('click', (event)=> {
         
-       
+        startBtnEl.disabled = true;
 
         timerId = setInterval(() => {
 
